@@ -1,0 +1,20 @@
+{
+	"title": "testInvalidKeys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_roll": 90
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_inv",
+				"sections_abc",
+				"sections_def"
+			],
+			"ORDER": "sections_ghi"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

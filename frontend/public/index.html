@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>310 Frontend</title>
+		<link href="/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<form action="javascript:void(0);">
+			<label for="myFile">Select a dataset to add:</label><br>
+			<input type="file" id="myFile" name="filename"><br><br>
+			<label for="datasetId">Dataset Id:</label><br>
+			<input type="text" id="datasetId" name="datasetId" value="sections"><br><br>
+			<button id="dataset-button" class="button" >Add Dataset</button>
+		</form>
+
+		<p id="addDatasetResponse"></p>
+
+		<br><br>
+		<form action="javascript:void(0);">
+			<label for="query">View the course sections with an average greater than this:</label><br>
+			<input type="number" id="query" name="query"><br>
+			<button id="query-button" class="button" >ENTER</button>
+		</form>
+
+		<p id="queryResponse"></p>
+
+		<script type="text/javascript" src="/frontend.js"></script>
+	</body>
+</html>

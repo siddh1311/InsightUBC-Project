@@ -1,0 +1,174 @@
+{
+	"title": "groupByRoomNameWithWildcard",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_shortname": "AN*"
+					}
+				},
+				{
+					"LT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name",
+				"maxSeats"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"maxSeats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_name"
+			],
+			"APPLY": [
+				{
+					"maxSeats": {
+						"MAX": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_name": "ANGU_232",
+			"maxSeats": 16
+		},
+		{
+			"rooms_name": "ANGU_332",
+			"maxSeats": 16
+		},
+		{
+			"rooms_name": "ANGU_432",
+			"maxSeats": 16
+		},
+		{
+			"rooms_name": "ANGU_339",
+			"maxSeats": 20
+		},
+		{
+			"rooms_name": "ANSO_202",
+			"maxSeats": 26
+		},
+		{
+			"rooms_name": "ANGU_293",
+			"maxSeats": 32
+		},
+		{
+			"rooms_name": "ANGU_437",
+			"maxSeats": 32
+		},
+		{
+			"rooms_name": "ANSO_203",
+			"maxSeats": 33
+		},
+		{
+			"rooms_name": "ANGU_292",
+			"maxSeats": 35
+		},
+		{
+			"rooms_name": "ANSO_205",
+			"maxSeats": 37
+		},
+		{
+			"rooms_name": "ANGU_296",
+			"maxSeats": 37
+		},
+		{
+			"rooms_name": "ANGU_235",
+			"maxSeats": 41
+		},
+		{
+			"rooms_name": "ANGU_237",
+			"maxSeats": 41
+		},
+		{
+			"rooms_name": "ANGU_335",
+			"maxSeats": 41
+		},
+		{
+			"rooms_name": "ANGU_354",
+			"maxSeats": 44
+		},
+		{
+			"rooms_name": "ANGU_434",
+			"maxSeats": 44
+		},
+		{
+			"rooms_name": "ANGU_435",
+			"maxSeats": 53
+		},
+		{
+			"rooms_name": "ANGU_037",
+			"maxSeats": 54
+		},
+		{
+			"rooms_name": "ANGU_039",
+			"maxSeats": 54
+		},
+		{
+			"rooms_name": "ANGU_291",
+			"maxSeats": 54
+		},
+		{
+			"rooms_name": "ANGU_295",
+			"maxSeats": 54
+		},
+		{
+			"rooms_name": "ANGU_350",
+			"maxSeats": 58
+		},
+		{
+			"rooms_name": "ANGU_234",
+			"maxSeats": 60
+		},
+		{
+			"rooms_name": "ANGU_334",
+			"maxSeats": 60
+		},
+		{
+			"rooms_name": "ANGU_243",
+			"maxSeats": 68
+		},
+		{
+			"rooms_name": "ANGU_343",
+			"maxSeats": 68
+		},
+		{
+			"rooms_name": "ANGU_345",
+			"maxSeats": 68
+		},
+		{
+			"rooms_name": "ANGU_241",
+			"maxSeats": 70
+		},
+		{
+			"rooms_name": "ANGU_347",
+			"maxSeats": 70
+		},
+		{
+			"rooms_name": "ANGU_254",
+			"maxSeats": 80
+		},
+		{
+			"rooms_name": "ANSO_207",
+			"maxSeats": 90
+		},
+		{
+			"rooms_name": "ANGU_098",
+			"maxSeats": 260
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"title": "test19",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections00_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections00_dept",
+				"sections00_avg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

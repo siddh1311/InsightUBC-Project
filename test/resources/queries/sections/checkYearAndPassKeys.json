@@ -1,0 +1,44 @@
+{
+	"title": "checkYearAndPassKeys",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"LT": {
+						"sections_avg": 50
+					}
+				},
+				{
+					"EQ": {
+						"sections_year": 2015
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_pass",
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_pass": 1,
+			"sections_avg": 42.5
+		},
+		{
+			"sections_pass": 39,
+			"sections_avg": 39.03
+		},
+		{
+			"sections_pass": 9,
+			"sections_avg": 47.29
+		},
+		{
+			"sections_pass": 8,
+			"sections_avg": 47.82
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"title": "noMkey",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"_avg": 10
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"_dept",
+				"_avg"
+			],
+			"ORDER": "_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

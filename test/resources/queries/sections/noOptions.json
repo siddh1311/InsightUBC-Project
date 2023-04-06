@@ -1,0 +1,12 @@
+{
+	"title": "noOptions",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 0
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

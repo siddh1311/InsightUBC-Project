@@ -1,0 +1,50 @@
+{
+	"title": "testEQ",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"EQ": {
+						"sections_avg": 90
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "psyc"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_id"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90,
+			"sections_id": "542"
+		}
+	]
+}

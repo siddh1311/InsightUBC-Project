@@ -1,0 +1,345 @@
+{
+	"title": "testAndQuery",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 90
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "psyc"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_id"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.06,
+			"sections_id": "349"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.06,
+			"sections_id": "349"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.27,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.27,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.27,
+			"sections_id": "449"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.27,
+			"sections_id": "449"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.33,
+			"sections_id": "449"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.33,
+			"sections_id": "449"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.44,
+			"sections_id": "508"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.65,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.65,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.7,
+			"sections_id": "349"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.7,
+			"sections_id": "349"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.75,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.75,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.77,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.77,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.83,
+			"sections_id": "530"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 90.83,
+			"sections_id": "530"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.1,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.1,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.17,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.17,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.25,
+			"sections_id": "530"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.25,
+			"sections_id": "530"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.33,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.33,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.38,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.38,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "542"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "531"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.5,
+			"sections_id": "531"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.6,
+			"sections_id": "560"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.6,
+			"sections_id": "560"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.6,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.6,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.83,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 91.83,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 92,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 92,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.25,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.25,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.5,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.5,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 93.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 94.2,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 94.2,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 94.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 94.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95.25,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95.25,
+			"sections_id": "541"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 95.75,
+			"sections_id": "537"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 96,
+			"sections_id": "549"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 96,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 96,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 97,
+			"sections_id": "549"
+		}
+	]
+}

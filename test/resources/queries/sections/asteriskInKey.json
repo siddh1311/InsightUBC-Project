@@ -1,0 +1,19 @@
+{
+	"title": "asteriskInKey",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_av*g": 10
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_d*ept",
+				"sections_av*g"
+			],
+			"ORDER": "sections_a*vg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

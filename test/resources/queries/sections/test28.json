@@ -1,0 +1,407 @@
+{
+	"title": "test28",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_avg": 90
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "*dh*"
+							}
+						},
+						{
+							"LT": {
+								"sections_avg": 92
+							}
+						}
+					]
+				},
+				{
+					"AND": [
+						{
+							"EQ": {
+								"sections_avg": 95
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "crwr"
+							}
+						}
+					]
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_uuid",
+				"sections_title",
+				"sections_instructor",
+				"sections_year",
+				"sections_audit"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "adhe",
+			"sections_id": "329",
+			"sections_avg": 90.02,
+			"sections_pass": 62,
+			"sections_fail": 0,
+			"sections_uuid": "19184",
+			"sections_title": "dev wkshp/sem",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "329",
+			"sections_avg": 90.82,
+			"sections_pass": 33,
+			"sections_fail": 0,
+			"sections_uuid": "68543",
+			"sections_title": "dev wkshp/sem",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2015,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 91.29,
+			"sections_pass": 28,
+			"sections_fail": 0,
+			"sections_uuid": "19187",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2016,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 91.48,
+			"sections_pass": 23,
+			"sections_fail": 0,
+			"sections_uuid": "46423",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2009,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 90.85,
+			"sections_pass": 34,
+			"sections_fail": 0,
+			"sections_uuid": "46425",
+			"sections_title": "com adult educ",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 90.17,
+			"sections_pass": 29,
+			"sections_fail": 0,
+			"sections_uuid": "75628",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2011,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 90.5,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_uuid": "79479",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2012,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 91.33,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_uuid": "85074",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2012,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 91.33,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_uuid": "85075",
+			"sections_title": "com adult educ",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "330",
+			"sections_avg": 90.72,
+			"sections_pass": 25,
+			"sections_fail": 0,
+			"sections_uuid": "91932",
+			"sections_title": "com adult educ",
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2014,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "412",
+			"sections_avg": 90.16,
+			"sections_pass": 31,
+			"sections_fail": 0,
+			"sections_uuid": "68557",
+			"sections_title": "adul educ",
+			"sections_instructor": "vanwynsberghe, robert",
+			"sections_year": 2015,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "adhe",
+			"sections_id": "412",
+			"sections_avg": 90.18,
+			"sections_pass": 11,
+			"sections_fail": 0,
+			"sections_uuid": "78875",
+			"sections_title": "adul educ",
+			"sections_instructor": "falk, clifford",
+			"sections_year": 2007,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 2,
+			"sections_fail": 0,
+			"sections_uuid": "26257",
+			"sections_title": "thesis",
+			"sections_instructor": "graefe, sara",
+			"sections_year": 2014,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 1,
+			"sections_fail": 0,
+			"sections_uuid": "46406",
+			"sections_title": "thesis",
+			"sections_instructor": "svendsen, linda jane",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 1,
+			"sections_fail": 0,
+			"sections_uuid": "46407",
+			"sections_title": "thesis",
+			"sections_instructor": "medved, maureen",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_uuid": "71171",
+			"sections_title": "thesis",
+			"sections_instructor": "",
+			"sections_year": 2012,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 1,
+			"sections_fail": 0,
+			"sections_uuid": "75158",
+			"sections_title": "thesis",
+			"sections_instructor": "acheson, alison",
+			"sections_year": 2015,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_uuid": "81354",
+			"sections_title": "thesis",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_id": "599",
+			"sections_avg": 95,
+			"sections_pass": 2,
+			"sections_fail": 0,
+			"sections_uuid": "92881",
+			"sections_title": "thesis",
+			"sections_instructor": "galloway, steve",
+			"sections_year": 2014,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "400",
+			"sections_avg": 91.56,
+			"sections_pass": 9,
+			"sections_fail": 0,
+			"sections_uuid": "3301",
+			"sections_title": "curr iss oral hl",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2012,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "402",
+			"sections_avg": 90.08,
+			"sections_pass": 13,
+			"sections_fail": 0,
+			"sections_uuid": "4890",
+			"sections_title": "dentalhyg prac i",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "402",
+			"sections_avg": 90.08,
+			"sections_pass": 13,
+			"sections_fail": 0,
+			"sections_uuid": "4891",
+			"sections_title": "dentalhyg prac i",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "412",
+			"sections_avg": 90.63,
+			"sections_pass": 19,
+			"sections_fail": 0,
+			"sections_uuid": "4899",
+			"sections_title": "trends & topics",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "461",
+			"sections_avg": 91.3,
+			"sections_pass": 20,
+			"sections_fail": 0,
+			"sections_uuid": "4908",
+			"sections_title": "lit review i",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "461",
+			"sections_avg": 90.67,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_uuid": "4909",
+			"sections_title": "lit review i",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2013,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "461",
+			"sections_avg": 91.15,
+			"sections_pass": 26,
+			"sections_fail": 0,
+			"sections_uuid": "4910",
+			"sections_title": "lit review i",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "462",
+			"sections_avg": 90.03,
+			"sections_pass": 32,
+			"sections_fail": 0,
+			"sections_uuid": "4914",
+			"sections_title": "lit review ii",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "462",
+			"sections_avg": 91.88,
+			"sections_pass": 8,
+			"sections_fail": 0,
+			"sections_uuid": "69183",
+			"sections_title": "lit review ii",
+			"sections_instructor": "mcfarlane, rae",
+			"sections_year": 2014,
+			"sections_audit": 0
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_id": "462",
+			"sections_avg": 91.88,
+			"sections_pass": 8,
+			"sections_fail": 0,
+			"sections_uuid": "69184",
+			"sections_title": "lit review ii",
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_audit": 0
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"title": "noColumnFilterInOptions",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 0
+			}
+		},
+		"OPTIONS": {}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

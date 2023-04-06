@@ -1,0 +1,164 @@
+{
+	"title": "noColKey",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"maxLat"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"maxLat"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxLat": {
+						"MAX": "rooms_lat"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"maxLat": 49.27106
+		},
+		{
+			"maxLat": 49.2699
+		},
+		{
+			"maxLat": 49.26958
+		},
+		{
+			"maxLat": 49.26867
+		},
+		{
+			"maxLat": 49.26862
+		},
+		{
+			"maxLat": 49.2683
+		},
+		{
+			"maxLat": 49.26826
+		},
+		{
+			"maxLat": 49.26767
+		},
+		{
+			"maxLat": 49.26766
+		},
+		{
+			"maxLat": 49.2666
+		},
+		{
+			"maxLat": 49.266463
+		},
+		{
+			"maxLat": 49.2663
+		},
+		{
+			"maxLat": 49.26627
+		},
+		{
+			"maxLat": 49.2661
+		},
+		{
+			"maxLat": 49.266089
+		},
+		{
+			"maxLat": 49.26605
+		},
+		{
+			"maxLat": 49.2659
+		},
+		{
+			"maxLat": 49.26545
+		},
+		{
+			"maxLat": 49.26541
+		},
+		{
+			"maxLat": 49.26517
+		},
+		{
+			"maxLat": 49.26486
+		},
+		{
+			"maxLat": 49.26479
+		},
+		{
+			"maxLat": 49.26478
+		},
+		{
+			"maxLat": 49.2643
+		},
+		{
+			"maxLat": 49.2642
+		},
+		{
+			"maxLat": 49.26414
+		},
+		{
+			"maxLat": 49.264
+		},
+		{
+			"maxLat": 49.26398
+		},
+		{
+			"maxLat": 49.26372
+		},
+		{
+			"maxLat": 49.26293
+		},
+		{
+			"maxLat": 49.26274
+		},
+		{
+			"maxLat": 49.26273
+		},
+		{
+			"maxLat": 49.26236
+		},
+		{
+			"maxLat": 49.26229
+		},
+		{
+			"maxLat": 49.26228
+		},
+		{
+			"maxLat": 49.26228
+		},
+		{
+			"maxLat": 49.26207
+		},
+		{
+			"maxLat": 49.26176
+		},
+		{
+			"maxLat": 49.26176
+		},
+		{
+			"maxLat": 49.26125
+		},
+		{
+			"maxLat": 49.26114
+		},
+		{
+			"maxLat": 49.26048
+		},
+		{
+			"maxLat": 49.26047
+		},
+		{
+			"maxLat": 49.26044
+		}
+	]
+}
